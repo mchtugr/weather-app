@@ -13,6 +13,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.app-wrapper {
+  min-height: 80vh;
+}
+
 .weather-icon {
   margin: auto;
   max-width: 100%;
@@ -54,4 +58,14 @@ body {
 
 .selected {
   background-color: #eee;
+}
+
+.author {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+}
+
+.author:hover {
+  transform: scale(1.5);
 }

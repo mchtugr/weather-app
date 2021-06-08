@@ -6,21 +6,25 @@ import SearchBar from './SearchBar'
 import SelectedTime from './SelectedTime'
 import TimeInterval from './TimeInterval'
 import WeatherList from './WeatherList'
+import Footer from './Footer'
 
 const App = () => {
   //global state
   const data = useSelector((state) => state.weather.data)
   return (
-    <Container className='mb-5'>
-      <SearchBar />
-      {data && (
-        <>
-          <SelectedTime />
-          <TimeInterval />
-          <WeatherList />
-        </>
-      )}
-    </Container>
+    <>
+      <Container className='mb-4 app-wrapper'>
+        <SearchBar />
+        {data && (
+          <>
+            <SelectedTime />
+            <TimeInterval />
+            <WeatherList />
+          </>
+        )}
+      </Container>
+      <Footer />
+    </>
   )
 }
 
