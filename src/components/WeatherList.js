@@ -10,7 +10,6 @@ const WeatherList = () => {
       {Number(data[0].dt_txt.split(' ')[1].slice(0, 2)) > 12 && (
         <WeatherCard data={data[0]} />
       )}
-      <WeatherCard data={data[0]} />
 
       {data.map((i) => {
         if (i.dt_txt.split(' ')[1] === '12:00:00') {
