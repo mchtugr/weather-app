@@ -85,7 +85,7 @@ const SelectedTime = () => {
         </Col>
 
         {/* Current Day right Screen */}
-        <Col xs={4} className=''>
+        <Col xs={4} className='text-right'>
           {/* City & Country */}
           <Row className='justify-content-end px-2 pt-2'>
             {location.name}, {location.country}
