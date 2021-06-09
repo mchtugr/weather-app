@@ -46,7 +46,7 @@ const SearchBar = () => {
               </Form.Group>
             </Col>
             <Col xs={'auto'}>
-              <Button variant='info' type='button' onClick={fetchWeather}>
+              <Button variant='info' type='submit'>
                 Fetch
               </Button>
             </Col>
