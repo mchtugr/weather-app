@@ -23,15 +23,15 @@ const SelectedTime = () => {
   }, [selectedDay])
 
   return (
-    <Container className='border rounded'>
-      <Row className='demo'>
+    <Container className='border rounded p-3'>
+      <Row className='selected-time'>
         {/* Current Day left screen */}
         <Col xs={8}>
           <Row>
             <Col xs={'auto'}>
               {/* Weather Icon */}
               <Image
-                src={`/icons/${selectedData.weather[0].icon}.png`}
+                src={`https://raw.githubusercontent.com/murtazaaylak/weather-app/main/public/icons/${selectedData.weather[0].icon}.png`}
                 alt={selectedData.weather[0].description}
               />
             </Col>

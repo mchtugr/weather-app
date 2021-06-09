@@ -19,7 +19,7 @@ const SearchBar = () => {
   }
 
   return (
-    <Row className='justify-content-center mb-5 mt-5'>
+    <Row className='justify-content-center mb-1 mt-5'>
       <Col md={6} xs={11}>
         {/* if fetching data from api gives error */}
         {error && (

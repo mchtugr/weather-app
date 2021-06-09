@@ -17,6 +17,11 @@ body {
   min-height: 80vh;
 }
 
+.weather-card {
+  justify-content: center;
+  width: calc(100% / 6.5);
+}
+
 .weather-icon {
   margin: auto;
   max-width: 100%;
@@ -27,11 +32,11 @@ body {
   text-transform: capitalize;
 }
 
-.demo {
+.selected-time {
   display: flex;
   justify-content: space-between;
 }
-
+/* temperature font */
 .temp-font {
   display: flex;
   align-items: center;
@@ -46,20 +51,21 @@ body {
   width: calc(100% / 8);
 }
 
+/* for xs size devices */
 @media only screen and (max-width: 600px) {
   .time-interval {
     width: calc(100% / 4);
   }
+  .weather-card {
+    width: calc(100% / 7);
+  }
 }
 
-.weather-card {
-  width: calc(100% / 7);
-}
-
+/* click effect */
 .selected {
   background-color: #eee;
 }
-
+/* footer */
 .author {
   text-decoration: none;
   color: #000;

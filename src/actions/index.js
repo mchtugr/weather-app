@@ -11,12 +11,19 @@ import {
 export const fetchWeather = (city) => async (dispatch, getState) => {
   try {
     dispatch({ type: FETCH_WEATHER_DATA_REQUEST })
+    let url
 
-    const { data } = await axios.get(
-      `http://api.openweathermap.org/data/2.5/forecast?q=${city}&units=${
+    if (false) {
+      url = `http://api.openweathermap.org/data/2.5/forecast?q=${city}&units=${
         getState().unit
       }&appid=bec94a3e4508449a5a9ff54c70a1990d`
-    )
+    } else {
+      url = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=${
+        getState().unit
+      }&appid=bec94a3e4508449a5a9ff54c70a1990d`
+    }
+
+    const { data } = await axios.get(url)
 
     dispatch({
       type: FETCH_WEATHER_DATA_SUCCESS,

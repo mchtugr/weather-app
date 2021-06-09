@@ -30,7 +30,7 @@ const WeatherCard = ({ data }) => {
             className='weather-icon'
             variant='top'
             // weather icon
-            src={`/icons/${data.weather[0].icon}.png`}
+            src={`https://raw.githubusercontent.com/murtazaaylak/weather-app/main/public/icons/${data.weather[0].icon}.png`}
           />
           <Card.Body className='text-center px-0'>
             {/* Round the temperature */}
