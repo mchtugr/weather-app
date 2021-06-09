@@ -1,3 +1,5 @@
+# You can preview the app [here](https://murtazaaylak.github.io/weather-app/)
+
 ## openweathermap.org 5day / 3hour api was used.
 
 You can see weather condition for the following 5 days in 3 hours period.
