@@ -1,5 +1,5 @@
 import React from 'react'
-import { Row, Col } from 'react-bootstrap'
+import { Row } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
 import { changeDisplayTime } from '../actions'
 
@@ -8,7 +8,6 @@ const TimeInterval = () => {
   let data = useSelector((state) => state.weather.data)
   const selectedData = useSelector((state) => state.weather.selectedData)
   const selectedDay = useSelector((state) => state.weather.selectedDay)
-  const firstDay = data[0].dt_txt.split(' ')[0]
   const selectedDayData = data.find(
     (item) => item.dt_txt.split(' ')[0] === selectedDay
   )

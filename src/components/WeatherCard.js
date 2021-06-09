@@ -1,7 +1,7 @@
 import React from 'react'
-import { Col, Row, Card } from 'react-bootstrap'
+import { Card } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
-import { changeDisplayDay, changeDisplayTime } from '../actions'
+import { changeDisplayDay } from '../actions'
 
 const WeatherCard = ({ data }) => {
   const dispatch = useDispatch()

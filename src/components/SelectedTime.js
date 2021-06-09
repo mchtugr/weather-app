@@ -20,7 +20,7 @@ const SelectedTime = () => {
       (item) => item.dt_txt.split(' ')[0] === selectedDay
     )
     dispatch(changeDisplayTime(selectedDayData.dt))
-  }, [selectedDay])
+  }, [selectedDay, data, dispatch])
 
   return (
     <Container className='border rounded p-3'>
