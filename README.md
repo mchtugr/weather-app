@@ -1,4 +1,4 @@
-# You can preview the app [here](https://murtazaaylak.github.io/weather-app/)
+# You can preview the app [here](https://mchtugr.github.io/weather-app/)
 
 ## openweathermap.org 5day / 3hour api was used.
 
